@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="movie">
+        <div class="first-window" id="firstWindow">
+            <div class="header-greet" id="headerGreet">
+                <p class="header-window">Hi there!</p>
+            </div>
+            <p class="question" id="question">Would you like to watch a movie?</p>
+            <div class="buttons">
+                <button class="yes-choice" id="yesChoice">Yes</button>
+                <button class="no-choice" id="noChoice">No</button>
+            </div>
+        </div>
+        <div class="second-window-y" id="secondWindowY">
+            <div class="header-greet-y" id="headerGreetY">
+                <p class="header-window-y">I like to watch movie too!</p>
+            </div>
+            <p class="question-y" id="questionY">What movie would you like to watch?</p>
+            <div class="suggestion">
+                <input type="text" placeholder="Type here" class="movie-title" id="movieTitle">
+                <input type="submit" value="I want this!" class="iwant" id="iWant">
+            </div>
+        </div>
+        <div class="second-window-n" id="secondWindowN">
+            <div class="header-greet-n" id="headerGreetN">
+                <p class="header-window-n">Sorry, the answer should be YES</p>
+            </div>
+            <p class="question-n" id="question-n">This form is not available.</p>
+            <div class="button-n">
+                <button class="go-back" id="goBack">Go back</button>
+            </div>
+        </div>
+        <div class="third-window" id="thirdWindow">
+            <div class="header-greet-third" id="headerGreetThird">
+                <p class="header-window-third">Great choice! I like it too.</p>
+            </div>
+            <p class="question-2" id="questionTwo">May I invite you to a movie date?</p>
+            <div class="buttons">
+                <button class="yes-choice-2" id="yesChoiceTwo">Sure!</button>
+                <button class="no-choice-2" id="noChoiceTwo">No</button>
+            </div>
+        </div>
+        <div class="third-window-y" id="thirdWindowY">
+            <div class="header-greet-third-y" id="headerGreetThirdY">
+                <p class="header-window-third-y">OMG really??? Yey!!</p>
+            </div>
+            <p class="question-3" id="questionThree">When are you free?</p>
+            <div class="movie-date">
+                <input type="date" class="date-result" id="dateRes">
+                <input type="button" class="submit" id="submitDate" value="Submit">
+            </div>
+        </div>
+        <div class="third-window-n" id="thirdWindowN">
+            <div class="header-greet-n2" id="headerGreetN2">
+                <p class="header-window-n2">Sorry, the answer should be YES</p>
+            </div>
+            <p class="question-n2" id="question-2">This form is not available.</p>
+            <div class="button-n2">
+                <button class="go-back-2" id="goBack2">Go back</button>
+            </div>
+        </div>
+        <div class="result" id="result">
+            <div class="header-greet-result" id="headerGreetResult">
+                <p class="header-window-result">Kindly screenshot the result. Thank you!</p>
+            </div>
+            <div class="result-text">
+                <p class="movie-name">Movie name:</p>
+                <p class="result-ss" id="resultSs"></p>
+                <p class="date-date">Date:</p>
+                <p class="result-ssd" id="resultSsD"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
