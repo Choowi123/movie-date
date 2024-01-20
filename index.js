@@ -35,9 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     iWant.addEventListener("click", event => {
-        resultSs.innerHTML = movieTitle.value;
-        document.getElementById('secondWindowY').style.display = 'none';
-        document.getElementById('thirdWindow').style.display = 'flex';
+        if(movieTitle.value == ""){
+            document.getElementById('secondWindowY').style.display = 'flex';
+        } else {
+            resultSs.innerHTML = movieTitle.value;
+            document.getElementById('secondWindowY').style.display = 'none';
+            document.getElementById('thirdWindow').style.display = 'flex';
+        }
     });
 
     yesChoiceTwo.addEventListener("click", event => {
@@ -56,8 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     submitDate.addEventListener("click", event => {
-        resultSsD.innerHTML = dateRes.value;
-        document.getElementById('thirdWindowY').style.display = 'none';
-        document.getElementById('result').style.display = 'flex';
+        if(dateRes.value == ""){
+            document.getElementById('thirdWindowY').style.display = 'flex';
+        } else {
+            resultSsD.innerHTML = dateRes.value;
+            document.getElementById('thirdWindowY').style.display = 'none';
+            document.getElementById('result').style.display = 'flex';
+        }
     })
 });
